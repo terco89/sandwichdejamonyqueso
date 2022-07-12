@@ -1,0 +1,39 @@
+<html>
+    <head></head>
+    <body style="margin:0; padding:0;">
+        <div id="fondo">
+            <img style="width:100%; height:100%;" src="maidana.jpg" id="id">
+        </div>
+        <style>
+            #fondo{
+                width: 100%;
+                height: 100%;
+                background-image:url("maidana.jpg");
+                background-repeat: no-repeat;
+            }
+        </style>
+        <script type="text/javascript">
+            const m = "maidana.jpg"
+            const e = "eeuu.png"
+            const p = "pcgeimer.jpg";
+            const d = document.getElementById('id');
+            var i = 0;
+            
+            setInterval(gabo, 3000);
+            
+            function gabo(){
+                i++;
+                if(i == 1){
+                    d.src = e;
+                }
+                else if(i == 2){
+                    d.src = p;
+                }
+                else{
+                    d.src = m;
+                    i = 0;
+                }
+            }
+        </script>
+    </body>
+</html>
